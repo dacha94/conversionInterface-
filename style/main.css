@@ -1,0 +1,121 @@
+/* основное  */
+html,
+body {
+    height: 100%;
+    line-height: 160%;
+    font-size: 14px;
+    color: #22266b;
+    font-family: 'Staatliches', sans-serif;
+}
+
+/* позиции */
+.wrapper {
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.form * {
+    outline: none;
+}
+
+.form {
+    max-width: 560px;
+    margin: 8% auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.form__item {
+    position: relative;
+}
+
+.form__input {
+    margin-top: 18px;
+}
+.form__input:valid {
+    border-color: rgb(103, 141, 103);
+}
+
+.form__input:invalid {
+    border-color: rgb(114, 64, 64);
+}
+.form__label {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    z-index: 1;
+}
+
+p {
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+
+/* оформление */
+.form__title {
+    font-size: 24px;
+    color: #5438b0;
+    letter-spacing: 0.1em ;
+    line-height: 180%;
+    margin: 0px;
+    padding: 0px 0px 18px 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.form__input {
+    color: #23262F;
+    width: 250px;
+    box-sizing: border-box;
+    padding: 18px 15px 5px 15px;
+    background-color: #FFFFFF;
+    border: solid 1px #425B5F;
+    border-radius: 8px;
+    transition: all 0.5s ease 0s;
+    font-family: 'Staatliches', sans-serif;
+}
+
+.form__input:focus {
+    border: solid 1px #000000;
+}
+
+.form__label {
+    background-color: #FFFFFF;
+    padding: 0px 5px;
+    overflow: hidden;
+    color: #425B5F;
+}
+
+p {
+    color: #425B5F;
+}
+
+/* батон */
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color:#8f8da1;
+    text-transform: uppercase;
+    border-radius: 8px;
+    padding: 13px 30px;
+    min-width: 60px;
+    cursor: pointer;
+    transition: background-color 0.5s ease 0s;
+    box-shadow: 0 2px 0 #23262f3b;
+}
+
+.button_color-lilac {
+    background-color: #462585 ;
+    margin-left: 15px;
+}
+
+.button_color-lilac:hover {
+    background-color: #4f5ab8;
+}
+
